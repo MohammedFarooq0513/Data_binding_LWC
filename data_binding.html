@@ -1,0 +1,38 @@
+<template>
+    <lightning-card title="Databinding" icon-name="standard:account" variant="base">
+    <div class="slds-text-align_left">
+      <lightning-button 
+      variant="brand" 
+      label="Update Phone" 
+      onclick={handleButtonFuntion}>
+    </lightning-button>
+    <lightning-input
+      label="Enter the Input Text"
+      value={Inputvalue} 
+      onchange={captureInput}>
+    </lightning-input>
+
+    </div>
+    
+    <div class="slds-text-align_left">
+
+    <P>data_binding Demo..!</P><br>
+
+           <p> 1.variable initiated directly from js.</p>
+           <p> Person Name:<b>{personname}</b></p><br>
+    
+           <p> 2.variable initized with constructor</p>
+           <p> Company Name:<b>{companyname}</b></p><br>
+       
+           <p> 3.variable initized with connectedCallback</p>
+           <p> companyAddress:<b>{companyAddress}</b></p><br>
+
+           <p> 4.variable initiated with button click</p>
+            <p> Phone:<b>{Phone}</b></p><br>
+            
+            <p> 5.variable initiated with Input </p>
+            <p> Inputvalue:<b>{Inputvalue}</b></p><br>
+        </div>
+
+    </lightning-card>
+</template>
